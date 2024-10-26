@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="shirt-jump" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455.63 574.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d2c6a;
+      }
+
+      .cls-2 {
+        fill: #5964ad;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M138.26,234.39v53.33h178.29v-53.33h-59.05s-10.41,13.65-29.68,13.65c-20.46,0-32.29-13.65-32.29-13.65h-57.27Z"/>
+  <path class="cls-1" d="M270.19,250.83h25.14s2.79,18.29-12.57,18.29c-16.89,0-12.57-18.29-12.57-18.29Z"/>
+</svg>
