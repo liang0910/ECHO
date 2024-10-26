@@ -81,12 +81,26 @@ header a:hover {
     z-index: 2000;
 }
 
-.skin-color, .blush-color, .hair-style, .hair-color, .top-style, .top-color, .bottom-style, .bottom-color, .shoes-color, .shoes-style, .accessories-style, .accessories-color{
+.skin-color, .hair-style, .top-style, .bottom-style, .shoes-color, .accessories-style{
     background-color: transparent;
     border: transparent;
-    margin-left: 50px;
-    position: relative;
-    top: -50px;
+    display: flex;
+    position: absolute;
+    margin-left: 2%;
+    padding: 5px;
+    top: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1999;
+}
+
+.blush-color, .hair-color, .top-color, .accessories-color{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    background-color: transparent;
+    border: transparent;
+    margin-left: 2%;
+    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 1999;
 }
