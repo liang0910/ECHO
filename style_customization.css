@@ -1,21 +1,16 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-family: Inter
 }
 
-@font-face {
-    font-family: "neue-haas-grotesk-display";
-    src: url("path/to/fonts/neue-haas-grotesk-display.woff2") format("woff2"),
-         url("path/to/fonts/neue-haas-grotesk-display.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    font-family: "neue-haas-grotesk-display", sans-serif;
-}
-
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
 
 /* TOP*/    
 header {
@@ -59,7 +54,7 @@ header li {
 header a {
     color: #3b3b3b;
     text-decoration: none;
-    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     white-space: nowrap;
 }
@@ -80,7 +75,9 @@ header a:hover {
     background-color: transparent;
     cursor: pointer;
     position: relative;
-    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 .skin-color, .blush-color, .hair-style, .hair-color, .top-style, .top-color, .bottom-style, .bottom-color, .shoes-color, .shoes-style, .accessories-style, .accessories-color{
@@ -89,7 +86,7 @@ header a:hover {
     margin-left: 50px;
     position: relative;
     top: -50px;
-    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
     
 .customization-panel {
@@ -126,43 +123,32 @@ header a:hover {
     margin-top: 80px;
 }
 
-.preview-btn {
-    background-color: #f3c77a;
-    padding: 10px 20px;
-    margin: 30px;
-    border-radius: 15px;
-    cursor: pointer;
-    position: relative;
-    top: -850px;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-}
-
 .preview-btn:hover {
     background-color: #f26e70;
 }
 
 .eyes {
-    width: 150px;
+    width: 9%;
     height: auto;
-    position: relative;
-    top: -790px;
+    position: absolute;
+    top: 40%;
     z-index: 4; 
 }
 
 #body {
-    width: 300px;
+    width: 18%;
     height: auto;
-    position: relative;
-    top: -400px;
+    position: absolute;
+    top: 32%;
     z-index: 3; 
 }
 
 #blush {
-    width: 330px;
+    width: 19.5%;
     height: auto;
-    position: relative;
-    top: -920px;
-    left: 15px;
+    position: absolute;
+    top: 30%;
+    left: 8.5%;
     z-index: 4; 
 }
 
@@ -173,13 +159,12 @@ header a:hover {
 .cus-area {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1%;
+    padding-right: 5%;
 }
 
 .category {
     display: flex;
-    top: 30px;
     justify-content: center;
     padding: 80px;
 }
@@ -189,6 +174,8 @@ header a:hover {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .skin::after, .hair::after, .top::after, .bottom::after, .shoes::after, .accessories::after, .room::after {
@@ -206,7 +193,6 @@ header a:hover {
     content: '';
     position: absolute;
     right: 10px;
-
     width: 30px;  /* 圓圈的大小 */
     height: 30px; 
     background-color: #f5c16c; /* 圓圈的顏色 */
@@ -216,18 +202,18 @@ header a:hover {
 }
 
 .hair-container {
-    width: 380px;
+    width: 22%;
     height: auto;
     position: absolute;
-    top: 165px;
+    top: 21%;
     z-index: 10;
 }
 
 .top-container {
-    width: 760px;
+    width: 46%;
     height: auto;
     position: absolute;
-    top: 49px;
+    top: 4%;
     z-index: 9;
 }
 
@@ -243,11 +229,11 @@ header a:hover {
 }
 
 .bottom-container {
-    width: 740px;
+    width: 44.5%;
     height: auto;
     position: absolute;
     z-index: 9;
-    top: 55px;
+    top: 5%;
 }
 
 
@@ -263,8 +249,8 @@ header a:hover {
 
 
 .room-buttons{
-    position: relative;
-    left: 100px;
+    position: absolute;
+    left: 35%;
 }
 
 #room01, #room02, #room03, #room04{
@@ -273,7 +259,7 @@ header a:hover {
     margin: 30px;
     border-radius: 15px;
     cursor: pointer;
-    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .room-container {
@@ -282,7 +268,7 @@ header a:hover {
     align-items: center;
     position: absolute;
     z-index: 1; 
-    top: 260px;
+    top: 50%;
 }
 
 .room {
@@ -336,7 +322,7 @@ header a:hover {
 }
 
 .shoes-color, .bottom-style, .top-color, .top-style, .hair-style, .hair-color, .skin-color, .blush-color{
-    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -396,7 +382,7 @@ header a:hover {
     margin: 30px;
     border-radius: 15px;
     cursor: pointer;
-    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #room01:hover, #room02:hover, #room03:hover, #room04:hover {
