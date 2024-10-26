@@ -34,7 +34,7 @@ header {
         align-items: center;
         padding: 20px;    
         margin: 20px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "neue-haas-grotesk-display", sans-serif;
     }
 
     .login {
@@ -48,7 +48,7 @@ header {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 20px;
         white-space: nowrap;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "neue-haas-grotesk-display", sans-serif;
     }
     
     header a:hover{
@@ -70,7 +70,7 @@ header {
         color: #fff;
         text-decoration: none;
         font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "neue-haas-grotesk-display", sans-serif;
         border-radius: 25px;
         border: none;
         cursor: pointer;
