@@ -4,13 +4,12 @@
     font-family: Inter
 }
 
-:root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-  }
-  @supports (font-variation-settings: normal) {
-    :root { font-family: InterVariable, sans-serif; }
-  }
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px; /* 確保有小的邊距但不超出螢幕 */
+    }
+}
 
 /* TOP*/    
 header {
