@@ -78,6 +78,7 @@ header a:hover {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
+    z-index: 2000;
 }
 
 .skin-color, .blush-color, .hair-style, .hair-color, .top-style, .top-color, .bottom-style, .bottom-color, .shoes-color, .shoes-style, .accessories-style, .accessories-color{
@@ -87,6 +88,7 @@ header a:hover {
     position: relative;
     top: -50px;
     font-family: Arial, Helvetica, sans-serif;
+    z-index: 1999;
 }
     
 .customization-panel {
