@@ -1,0 +1,402 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* TOP*/    
+header {
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid #3b3b3b;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 400px;
+}
+
+header li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    z-index: 2000;
+}
+
+.login {
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+header a {
+    color: #3b3b3b;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/*customization area*/
+.cus-panel {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.skin, .hair, .top, .bottom, .shoes, .accessories, .room {
+    padding: 10px 50px 0px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skin-color, .blush-color, .hair-style, .hair-color, .top-style, .top-color, .bottom-style, .bottom-color, .shoes-color, .shoes-style, .accessories-style, .accessories-color{
+    background-color: transparent;
+    border: transparent;
+    margin-left: 50px;
+    position: relative;
+    top: -50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+.customization-panel {
+    display: none; /* no visibility */
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 850px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+}
+
+.top-layer {
+    position: absolute;  /* 保證所有的 top SVG 重疊 */
+    top: 0;
+    left: 0;
+    width: 100%;  /* 填滿父容器 */
+    height: 100%; /* 填滿父容器 */
+    display: none;  /* 默認隱藏所有 top 圖層 */
+}
+
+.svg {
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    margin-top: 80px;
+}
+
+.preview-btn {
+    background-color: #f3c77a;
+    padding: 10px 20px;
+    margin: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    top: -850px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.preview-btn:hover {
+    background-color: #f26e70;
+}
+
+.eyes {
+    width: 150px;
+    height: auto;
+    position: relative;
+    top: -790px;
+    z-index: 4; 
+}
+
+#body {
+    width: 300px;
+    height: auto;
+    position: relative;
+    top: -400px;
+    z-index: 3; 
+}
+
+#blush {
+    width: 330px;
+    height: auto;
+    position: relative;
+    top: -920px;
+    left: 15px;
+    z-index: 4; 
+}
+
+#shoes {
+    z-index: 8;
+}
+
+.cus-area {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.category {
+    display: flex;
+    top: 30px;
+    justify-content: center;
+    padding: 80px;
+}
+
+.skin, .hair, .top, .bottom, .shoes, .accessories, .room {
+    padding: 10px 50px 0px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.skin::after, .hair::after, .top::after, .bottom::after, .shoes::after, .accessories::after, .room::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 1px;
+    background-color: #3b3b3b;
+}
+
+.skin:hover::before, .hair:hover::before, .top:hover::before, .bottom:hover::before, .shoes:hover::before, .accessories:hover::before, .room:hover::before {
+    content: '';
+    position: absolute;
+    right: 10px;
+
+    width: 30px;  /* 圓圈的大小 */
+    height: 30px; 
+    background-color: #f5c16c; /* 圓圈的顏色 */
+    border-radius: 50%;  /* 使其成為圓形 */
+    opacity: 0.8; /* 可調節透明度 */
+    transition: all 0.3s ease;
+}
+
+.hair-container {
+    width: 380px;
+    height: auto;
+    position: absolute;
+    top: 165px;
+    z-index: 10;
+}
+
+.top-container {
+    width: 760px;
+    height: auto;
+    position: absolute;
+    top: 49px;
+    z-index: 9;
+}
+
+
+.top-container svg {
+    position: absolute;  /* 保證所有的 top SVG 重疊 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: none;  /* 默認隱藏所有 top 圖層 */
+    
+}
+
+.bottom-container {
+    width: 740px;
+    height: auto;
+    position: absolute;
+    z-index: 9;
+    top: 55px;
+}
+
+
+.bottom-container svg {
+    position: absolute;  /* 保證所有的 top SVG 重疊 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: none;  /* 默認隱藏所有 top 圖層 */
+    z-index: 8; 
+}
+
+
+.room-buttons{
+    position: relative;
+    left: 100px;
+}
+
+#room01, #room02, #room03, #room04{
+    background-color: #f3c77a;
+    padding: 10px 20px;
+    margin: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.room-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1; 
+    top: 260px;
+}
+
+.room {
+    width: 1100px;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+
+#skirt-long{
+    left: -40px;
+}
+
+.shoes-container{
+    width: 760px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    z-index: 8; 
+}
+
+.acc-container{
+    width: 760px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    z-index: 8; 
+}
+
+.svg-button.selected {
+    border: 3px solid #f26e70;  /* 選擇的按鈕會有外框 */
+}
+
+.detail-section {
+    display: none;
+    cursor: pointer;
+}
+
+.button {
+    cursor: pointer;
+    padding: 5px 15px;
+    margin-top: 5px;
+    border-color: #3b3b3b;
+}
+
+.svg-button {
+    border: none;
+    background-color: transparent;
+    width: 500px;
+    height: auto;
+}
+
+.shoes-color, .bottom-style, .top-color, .top-style, .hair-style, .hair-color, .skin-color, .blush-color{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+/* 預覽彈出視窗 */
+#popupWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    border: 2px solid #333;
+    padding: 20px 20px 5px; /* 添加內邊距使內容不緊貼邊框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 添加陰影增強效果 */
+    width: 500px; 
+    height: 250px;
+    overflow: auto; /* 當內容過多時顯示滾動條 */
+}
+
+.popup-content {
+    position: relative; /* 為子元素提供參考 */
+    text-align: center; /* 讓內容居中顯示 */
+    height: 0px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #f26e70;
+    border: 1px solid #f26e70;
+    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+}
+.room-buttons button {
+    margin: 10px;
+    padding: 10px;
+}
+
+#popupImage{
+    align-items:center;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+}
+
+#room01, #room02, #room03, #room04 {
+    background-color: #f3c77a;
+    padding: 10px 20px;
+    margin: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#room01:hover, #room02:hover, #room03:hover, #room04:hover {
+    background-color: #f26e70;
+}
+
+
+#popupBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    z-index: 999; /* 保證背景遮罩層級比彈跳視窗稍低 */
+    display: none; /* 默認隱藏 */
+}

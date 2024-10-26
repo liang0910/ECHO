@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* LANDING PAGE*/
+    
+header {
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid #3b3b3b;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+    .logo img{
+        width: 70px;
+    }
+    header ul{
+        z-index: 10;
+        position: relative;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 400px;
+    }
+
+    header li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;    
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .login {
+        display: flex;
+        justify-content: right;
+        align-items: flex-start;
+    }
+    header a{
+        color: #3b3b3b;
+        text-decoration: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header a:hover{
+        text-decoration: underline;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customize {
+        position: absolute;
+        left: 80px;
+        bottom: 20px;
+        padding: 10px 20px;
+        background-color: #f3c77a;
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        white-space: nowrap;
+    }
+
+    .customize:hover{
+        background-color: #f26e70;
+    }
+
+    heroimg{
+        position: absolute;
+        top: 50px;
+    }
+    .fig{
+        display: flex;
+        top: 50px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* 初始全螢幕的動畫樣式 */
+    #ani-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        z-index: 9999;
+        transition: opacity 1s ease; /* 設置淡化過渡效果 */
+    }
+    
+    #ani-container.fade-out {
+        opacity: 0; /* 淡化至完全透明 */
+        pointer-events: none; /* 防止透明後仍接受點擊事件 */
+    }
+    

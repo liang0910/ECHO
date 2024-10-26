@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">  
+        <img src="logo/Logo_FInal.png" alt="Echo logo"></div>  
+    
+    </div>
+
+        <ul>
+            <li><a href="landing.html">HOME</a></li>
+            <li><a href="#PRODUCT">PRODUCT</a></li>
+            <li><a href="#ABOUT US">ABOUT US</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+        </ul>
+
+        <div class="login">
+            <li><a href="LOG IN">LOG IN</a></li></div>
+
+</header>
+
+
+<main>
+
+    <div id="ani-container">
+        <img src="Echo LOGO.gif" alt="logo" id="animation">
+    </div>
+    <section>
+    <div class="heroimg">
+        <img class="fig" src="Assets/Photo Context_08.png"
+    </div>
+    </section>
+
+    <section>
+        <div class="customize-container">
+            <a href="customize.html" class="customize">Create Your Echo</a>
+        </div>
+    </section>
+    
+
+</main>
+
+    <script>
+        window.onload = function() {
+    const aniContainer = document.getElementById('ani-container'); // 使用正確的 ID
+
+    // 設定動畫播放時間，例如 5 秒後淡化
+    setTimeout(() => {
+        aniContainer.classList.add('fade-out');
+    }, 5000); // 這裡的 5000 毫秒（5 秒）可以根據實際動畫時間調整
+};
+
+    </script>
+
+</body>
+</html>
