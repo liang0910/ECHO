@@ -4,6 +4,19 @@
     font-family: "neue-haas-grotesk-display", sans-serif;
 }
 
+@font-face {
+    font-family: "neue-haas-grotesk-display";
+    src: url("path/to/fonts/neue-haas-grotesk-display.woff2") format("woff2"),
+         url("path/to/fonts/neue-haas-grotesk-display.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+}
+
+
 /* TOP*/    
 header {
     height: 80px;
